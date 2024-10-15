@@ -1,0 +1,85 @@
+/* Head Animation */
+.head {
+  animation: head-bounce 2s ease-in-out infinite;
+}
+
+@keyframes head-bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Body Animation */
+.body {
+  animation: body-sway 2s ease-in-out infinite;
+}
+
+@keyframes body-sway {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+}
+
+/* Left Hand Animation */
+.left.hand {
+  animation: left-hand-dance 2s ease-in-out infinite;
+  transform-origin: top left;
+}
+
+@keyframes left-hand-dance {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(160deg);
+  }
+}
+
+/* Right Hand Animation */
+.right.hand {
+  animation: right-hand-dance 2s ease-in-out infinite;
+  transform-origin: top right;
+}
+
+@keyframes right-hand-dance {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-160deg);
+  }
+}
+
+/* Left Foot Animation */
+.left.foot {
+  animation: left-foot-step 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes left-foot-step {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(15deg);
+  }
+}
+
+/* Right Foot Animation */
+.right.foot {
+  animation: right-foot-step 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes right-foot-step {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-15deg);
+  }
+}
